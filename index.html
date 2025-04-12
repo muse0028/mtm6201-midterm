@@ -3,38 +3,192 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-    <title>MTM6201 Midterm</title>
+    <title>L'Rouge Tomate</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Coiny&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "L'Rouge Tomate",
+          "url": "https://www.lrougetomate.com",
+          "logo": "./images/lrougelogo.png",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.lrougetomate.com"
+          },
+          "offers": {
+            "@type": "AggregateOffer",
+            "offers": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Product",
+                  "name": "Tomato Soup",
+                  "image": "./images/tomato-can1.png"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Product",
+                  "name": "Tomato Soup",
+                  "image": "./images/tomato-can2.png"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Product",
+                  "name": "Tomato Soup Can with Tomato Slice",
+                  "image": "./images/tomato-can3.png"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Product",
+                  "name": "Tomato Soup Can",
+                  "image": "./images/tomato-can4.png"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Product",
+                  "name": "Tomato Paste Can",
+                  "image": "./images/tomato-can5.png"
+                }
+              }
+            ]
+          }
+        }
+        </script>
 </head>
 <body>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <header role="banner">
+        <div id="home">
+            <div class="header">
+                <div class="lrougelogo">
+                    <img src="./images/lrougelogo.png" alt="l rouge tomate logo">
+                    <h1 class="brand-name">L'Rouge Tomate</h1>
+                </div>
+                
+                <nav class="nav" role="navigation" aria-label="Main Navigation">
+                    <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main role="main" id="main-content">
+        <section class="welcome" role="region" aria-label="Welcome Section">
+            <div class="tomatefield">
+                <picture>
+                    <source srcset="
+                                    ./images/tomatefield-1440x438.jpg, 
+                                    ./images/tomatefield-2880x1314.jpg 2x, 
+                                    ./images/tomatefield-5760x1752.jpg 3x" media="(min-width: 1028px)">
+        
+                    <source srcset="
+                                    ./images/tomatefield-800x400.jpg, 
+                                    ./images/tomatefield-533x267.jpg 2x, 
+                                    ./images/tomatefield-267x133.jpg 3x" media="(min-width: 768px)">
+        
+                    <img src="./images/tomatefield-393x161.jpg" srcset="
+                                    ./images/tomatefield-393x161.jpg, 
+                                    ./images/tomatefield-786x322.jpg 2x, 
+                                    ./images/tomatefield-1179x483.jpg 3x" alt="Field of tomatoes" width="393" height="161"
+                        style="width: 100%; height: auto;">
+                </picture>
+            </div>
+        
+            <div class="hero-text">
+                <h2>Lorem ipsum odor amet, consectetuer adipiscing elit. Nam ullamcorper pretium eleifend maecenas eleifend est.
+                </h2>
+                <div class="button-container">
+                    <a href="./about.html" class="button">About Us</a>
+                </div>
+            </div>
+        </section>
 
-    <header role="banner" itemscope itemtype="https://schema.org/Brand" id="top">
-        <div class="annonce" role="alert">
-        <a href="#main-content" class="skip-link">Skip to main content</a>
-        <span class="advertise">Free Courses🌟Sale Ends Soon, Get It Now<i class="fa-solid fa-arrow-right"></i></span>
+        <div class="products-container" role="region" aria-label="Products Section">
+            <h2>Our Soups and Paste</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="./images/tomato-can1.png" alt="Tomato Soup">
+                </div>
+                
+                <div class="product">
+                    <img src="./images/tomato-can2.png" alt="Tomato Soup">
+                </div>
+                
+                <div class="product">
+                    <img src="./images/tomato-can3.png" alt="Tomato Soup Can with Tomato Slice">
+                </div>
+                
+                <div class="product">
+                    <img src="./images/tomato-can4.png" alt="Tomato Soup Can">
+                </div>
+                
+                <div class="product">
+                    <img src="./images/tomato-can5.png" alt="Tomato Paste Can">
+                </div>
+            </div>
         </div>
 
-        <div class="row">
-            <img id='logo' src="./images/logo.svg" alt="company logo" role="img">
-            <nav id="navbar" role="navigation" aria-label="Main Navigation" 
-            <a href="index.html" "url">Home</a>
-            <a href="courses.html" "url">Courses</a>
-            <a href="#about" "url">About Us</a>
-            <a href="#pricing" "url">Pricing</a>
-            <a href="contact.html" "url">Contact</a>
-            </nav>
-
-            <div class="profile" role="group" aria-label="User Authentication">
-            <a class="signup" href="#" role="button" aria-label="Sign Up">Sign Up</a>
-            <a class="login" href="#" role="button" aria-label="Login">Login</a>
+        <section class="contact" role="region" aria-label="Contact Section">
+            <div class="peepaw">
+                <picture>
+                    <source srcset="
+                        ./images/peepaw-1440x438.jpg, 
+                        ./images/peepaw-2880x1314.jpg 2x, 
+                        ./images/peepaw-5760x1752.jpg 3x" media="(min-width: 1028px)">
+        
+                    <source srcset="
+                        ./images/peepaw-800x400.jpg, 
+                        ./images/peepaw-533x267.jpg 2x, 
+                        ./images/peepaw-267x133.jpg 3x" media="(min-width: 768px)">
+        
+                    <img src="./images/peepaw-340x198.jpg" srcset="
+                        ./images/peepaw-340x198.jpg, 
+                        ./images/peepaw-680x396.jpg 2x, 
+                        ./images/peepaw-1020x594.jpg 3x" alt="Field of peepaw" width="393"
+                        height="161" style="width: 100%; height: auto;">
+                </picture>
             </div>
-            </header>
+        </section>
 
-            <main roll="main"> </main>
-
-</body>
-</html>
+        <div class="social-media">
+            <hr class="divider">
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+            <hr class="divider">
+        </div>
+        <div class="contact-btn-container">
+            <a href="./contact.html" class="contact-btn">Contact Us</a>
+        </div>
+    </main>
+    <footer>
+        <div class="copyright">
+            <p>Â© All Rights Reserved</p>
+        </div>
+        <div class="logo-small">
+            <img src="./images/lrougelogo.png" alt="L'Rouge Tomate small logo">
+        </div>
+    </footer>
+    </body>
+    
+    </html>
